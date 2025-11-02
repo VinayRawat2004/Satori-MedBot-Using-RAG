@@ -1,0 +1,79 @@
+/* ──────────────────────────────
+   SATORI 2025 – ABOUT PAGE
+   ────────────────────────────── */
+
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.about-header h1 {
+  font-size: 3rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.about-header p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.timeline {
+  position: relative;
+  padding-left: var(--spacing-lg);
+  border-left: 2px solid var(--color-border);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: var(--spacing-lg);
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -40px;
+  top: 5px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--color-primary);
+}
+
+.timeline-content h3 {
+  font-size: 1.2rem;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-xs);
+}
+
+.timeline-content h4 {
+  font-size: 1.5rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.timeline-content p {
+  font-size: 1rem;
+}
+
+.vision-section {
+  margin-top: var(--spacing-xl);
+  padding: var(--spacing-lg);
+  background: var(--color-surface);
+  border-radius: var(--border-radius-lg);
+  text-align: center;
+}
+
+.vision-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.vision-section p {
+  font-size: 1.3rem;
+  max-width: 700px;
+  margin: 0 auto;
+}

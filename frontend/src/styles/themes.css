@@ -1,0 +1,98 @@
+/* ---------------------------------- */
+/* SATORI 2025 - THEME DEFINITIONS      */
+/* ---------------------------------- */
+
+/* Light Theme: Zen Garden */
+/* 🌤️ Light Theme: "Verdant Dawn" */
+.app.light {
+  --bg-color: #f7faf9; /* clean, soft white-green tone */
+  --text-color: #1f352b; /* deep forest text */
+  --heading-color: #0f5132; /* dark emerald for focus areas */
+  --accent-color: #2e7d32; /* consistent accent tone */
+  
+  --glass-bg: rgba(255, 255, 255, 0.65);
+  --glass-border: rgba(60, 100, 70, 0.08);
+  --glass-shadow: 0 4px 16px rgba(46, 125, 50, 0.08);
+  
+  --chat-user-bubble-bg: linear-gradient(135deg, #3da35d, #63b97a);
+  --chat-user-bubble-text: #ffffff;
+  --chat-bot-bubble-bg: #ffffff;
+  --chat-bot-bubble-text: #1f352b;
+  
+  --input-bg: rgba(0, 0, 0, 0.05);
+  --link-color: #2e7d32;
+  --hover-color: #43a047;
+}
+
+
+/* 🌑 Dark Theme: "Emerald Void" */
+.app.dark {
+  --bg-color: #081914;
+  --text-color: #d8fbe1;
+  --heading-color: #9ef4b3;
+  --accent-color: #00b374;
+  
+  --glass-bg: rgba(15, 30, 25, 0.55);
+  --glass-border: rgba(0, 179, 116, 0.25);
+  --glass-shadow: 0 0 30px rgba(0, 179, 116, 0.15);
+  
+  --chat-user-bubble-bg: linear-gradient(135deg, #00c896, #00b86b);
+  --chat-user-bubble-text: #fafffa;
+  --chat-bot-bubble-bg: rgba(35, 55, 45, 0.7);
+  --chat-bot-bubble-text: #d8fbe1;
+  
+  --input-bg: rgba(0, 0, 0, 0.25);
+  --link-color: #00b374;
+  --hover-color: #00d18c;
+}
+
+
+/* 🌬️ Glassy Theme: "Celestial Frost" */
+.app.glassy {
+  /* Background: softly layered gradients with luminous edges */
+  --bg-color: #e9fdf6; /* base mint-white tone */
+  --bg-glow:
+    radial-gradient(circle at 10% 20%, rgba(0, 222, 180, 0.25), transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(0, 168, 255, 0.18), transparent 45%);
+  
+  --text-color: #0e2a21; /* elegant deep green for readability */
+  --heading-color: #005f46; /* mint-emerald heading tone */
+  --accent-color: #00c2a8; /* tropical teal accent */
+  
+  /* Glass panels: bright and soft with subtle glow */
+  --glass-bg: rgba(255, 255, 255, 0.4);
+  --glass-border: rgba(0, 200, 170, 0.15);
+  --glass-shadow: 0 0 35px rgba(0, 200, 170, 0.12);
+  
+  /* Chat & Input */
+  --chat-user-bubble-bg: linear-gradient(135deg, #a7f3d0, #6ee7b7);
+  --chat-user-bubble-text: #053a2e;
+  --chat-bot-bubble-bg: rgba(255, 255, 255, 0.55);
+  --chat-bot-bubble-text: #0e2a21;
+  
+  --input-bg: rgba(255, 255, 255, 0.5);
+  --link-color: #00bfa5;
+  --hover-color: #009f8c;
+}
+/* General Application Styles using Variables */
+body, .app {
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Satoshi', sans-serif;
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
+h1, h2, h3 {
+  font-family: 'Clash Display', sans-serif;
+  color: var(--heading-color);
+}
+
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease;
+}

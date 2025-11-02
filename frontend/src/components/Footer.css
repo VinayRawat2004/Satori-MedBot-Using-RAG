@@ -1,0 +1,27 @@
+/* ──────────────────────────────
+   SATORI 2025 – FOOTER
+   ────────────────────────────── */
+
+.footer {
+  text-align: center;
+  padding: var(--spacing-lg);
+  border-top: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.footer-copyright {
+  color: var(--color-text-secondary);
+}

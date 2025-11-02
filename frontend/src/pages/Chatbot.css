@@ -1,0 +1,131 @@
+/* -------------------------------------- */
+/* SATORI 2025 - WHATSAPP/TELEGRAM THEME  */
+/* -------------------------------------- */
+
+.chatbot {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 15px; /* Tighter padding on main container */
+  border-radius: 35px; /* More rounded */
+  display: flex;
+  flex-direction: column;
+  height: 85vh;
+  box-shadow: 0 15px 50px rgba(0,0,0,0.5); /* Stronger shadow */
+}
+
+.chatbot-header {
+  text-align: center;
+  padding: 10px 0 20px 0;
+  font-size: 1.8rem;
+}
+
+.chat-window {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  /* Add a subtle background texture */
+  background: rgba(0,0,0,0.1);
+  border-radius: 25px;
+}
+
+/* Scrollbar styling */
+.chat-window::-webkit-scrollbar { width: 6px; }
+.chat-window::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+.message-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+}
+
+.message-container.user { align-self: flex-end; align-items: flex-end; }
+.message-container.bot { align-self: flex-start; align-items: flex-start; }
+
+.message-bubble {
+  position: relative; /* Needed for the timestamp */
+  padding: 12px 20px;
+  padding-bottom: 28px; /* Extra space for the time */
+  border-radius: 22px;
+  line-height: 1.6;
+  font-size: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  min-width: 80px; /* Minimum bubble width */
+}
+
+.message-text {
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.message-time {
+  position: absolute;
+  bottom: 8px;
+  right: 15px;
+  font-size: 0.75rem;
+  opacity: 0.7;
+}
+
+/* WhatsApp/Telegram bubble shapes and colors */
+.message-container.user .message-bubble {
+  background: var(--chat-user-bubble-bg);
+  color: var(--chat-user-bubble-text);
+  border-bottom-right-radius: 5px; /* "Tail" effect */
+}
+.message-container.bot .message-bubble {
+  background: var(--chat-bot-bubble-bg);
+  color: var(--chat-bot-bubble-text);
+  border-bottom-left-radius: 5px; /* "Tail" effect */
+}
+
+/* Chat Input Area */
+.chat-input-area {
+  display: flex;
+  margin-top: 20px;
+  gap: 12px;
+  align-items: center;
+}
+
+.chat-input {
+  flex: 1;
+  padding: 16px 24px;
+  border-radius: 50px;
+  border: 1px solid var(--glass-border);
+  background: var(--input-bg);
+  color: inherit;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+.chat-input:focus {
+  border-color: #33e2b0;
+  box-shadow: 0 0 10px rgba(51, 226, 176, 0.4);
+}
+
+.send-button {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 1.5rem;
+  background: linear-gradient(135deg, #33e2b0, #00bfa5);
+  color: #003326;
+  border: none;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  transition: all 0.3s ease;
+}
+
+.send-button:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(51, 226, 176, 0.5);
+}
+.send-button:disabled { opacity: 0.6; cursor: not-allowed; }
+

@@ -1,0 +1,25 @@
+/* ──────────────────────────────
+   SATORI 2025 – APP STYLES
+   ────────────────────────────── */
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex-grow: 1;
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  padding: var(--spacing-lg) 0;
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 768px) {
+  .main-content {
+    width: 95%;
+    padding: var(--spacing-md) 0;
+  }
+}

@@ -1,0 +1,58 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: sticky;
+    top: 15px; /* Stick to top with some margin */
+    width: calc(100% - 60px); /* Adjust width for margin */
+    margin: 0 auto 30px auto;
+    z-index: 1000;
+    border-radius: 50px; /* Pill shape */
+}
+
+.navbar-logo a {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Space between logo and text */
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo-img {
+    height: 40px; /* Control logo size */
+    width: auto;
+    transition: transform 0.4s ease;
+}
+
+.logo-img:hover {
+    transform: rotate(360deg);
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+    transition: opacity 0.3s ease;
+}
+
+.navbar-links a:hover {
+    opacity: 0.7;
+}
+
+.theme-toggle {
+    padding: 8px 16px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--glass-border);
+    color: inherit;
+    outline: none;
+}

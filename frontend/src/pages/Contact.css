@@ -1,0 +1,75 @@
+/* -------------------------------------- */
+/* SATORI 2025 - COMPLETE CONTACT PAGE    */
+/* -------------------------------------- */
+
+.contact {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 50px; /* More generous padding */
+}
+
+.contact-title {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.contact-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    opacity: 0.8;
+    margin: -10px auto 40px auto; /* Position it nicely under the title */
+    max-width: 450px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space out the form fields */
+}
+
+.form-input, .form-textarea {
+    display: block;
+    width: 100%;
+    padding: 18px 20px;
+    border-radius: 16px;
+    border: 1px solid var(--glass-border);
+    background: var(--input-bg);
+    color: inherit; /* Use theme text color */
+    font-size: 1rem;
+    font-family: 'Satoshi', sans-serif;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.form-input::placeholder, .form-textarea::placeholder {
+    color: var(--text-color);
+    opacity: 0.5;
+}
+
+.form-input:focus, .form-textarea:focus {
+    border-color: #33e2b0;
+    box-shadow: 0 0 15px rgba(51, 226, 176, 0.3);
+}
+
+.form-textarea {
+    resize: vertical; /* Allow user to resize height */
+    min-height: 150px; /* Make it feel substantial */
+}
+
+.form-button {
+    width: 100%;
+    padding: 18px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border-radius: 50px; /* Pill shape */
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #33e2b0, #00bfa5);
+    color: #003326;
+}
+
+.form-button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(51, 226, 176, 0.4);
+}
